@@ -16,9 +16,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("./public"));
 
 // react router route
-// app.get("*", function(req, res) {
-//     res.sendFile(__dirname + "/public/index.html");
-// });
+app.get("*", function(req, res) {
+    res.sendFile(__dirname + "/public/index.html");
+});
 
 //listener
 app.listen(PORT, function() {

@@ -1,15 +1,9 @@
-.navbar-nav {
+footer {
     position: absolute;
-    right: 15px;
-    height: 60px;
-    padding: 18px 0px 17px;
-}
-
-.dropdown {
-    list-style: none;
-}
-
-.dropdown-menu {
-    top: 0%;
-    left: -170px;
+    right: 0;
+    bottom: 0;
+    margin-top: 5px;
+    background-color: gainsboro;
+    text-align: center;
+    width: 100%;
 }
