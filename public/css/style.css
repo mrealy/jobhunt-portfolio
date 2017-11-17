@@ -1,9 +1,69 @@
-footer {
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+nav {
+    width: 100%;
+}
+h3 {
+    margin: 0;
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.project-tile {
+    height: 300px;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bolder;
+    z-index: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+.project-tile:after {
+    background-image: var(--project-bg-img);
+    content: '';
+    height: 285px;
+    margin: 15px 25px 15px 25px;
+    padding: 10px 20px 10px 20px;
     position: absolute;
+    top: 0;
+    bottom: 0;
     right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .3;
+}
+.expand {
+    -webkit-transition: all .75s; 
+    -moz-transition: all .75s; 
+    -ms-transition: all .75s; 
+    -o-transition: all .75s; 
+    transition: all .75s;
+    max-height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.project-tile:hover {
+    box-shadow: 3px 3px 10px gray;
+}
+
+.project-tile:hover .expand {
+    max-height: 200px;
+    opacity: 1;
+    padding: 10px 0px 10px 0px;
+}
+footer {
+    position: fixed;
+    left: 0;
     bottom: 0;
     margin-top: 5px;
     background-color: gainsboro;
     text-align: center;
     width: 100%;
+    clear: both;
 }
