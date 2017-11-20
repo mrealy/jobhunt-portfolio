@@ -49,7 +49,7 @@ class ProjectModal extends React.Component {
             <span>
             {projectTile}
             <div id="modal" style={this.state} onClick={(e) => this.closeOnBackground(e)}>
-                <span className="modal-close" onClick={(e) => this.hideModal(e)}>x</span>
+                <span className="modal-close" onClick={(e) => this.hideModal(e)}>X</span>
                 {this.props.content}
             </div>
             </span>
