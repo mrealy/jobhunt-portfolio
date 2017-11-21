@@ -50,10 +50,23 @@ p {
     padding: 0;
     overflow: hidden;
 }
+.main-tools {
+    font-size: 18px;
+    padding-top: 15px;
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -ms-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
+}
 .project-tile:hover .expand {
     max-height: 200px;
     opacity: 1;
     padding: 10px 0px 10px 0px;
+}
+.project-tile:hover .main-tools {
+    font-size: 14px;
+    padding-top: 0px;
 }
 footer {
     position: fixed;
@@ -114,5 +127,9 @@ footer {
         max-height: 200px;
         opacity: 1;
         padding: 10px 0px 10px 0px;
+    }
+    .main-tools {
+        font-size: 14px;
+        padding-top: 0px;
     }
 }

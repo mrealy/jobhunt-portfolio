@@ -36,12 +36,14 @@ class ProjectModal extends React.Component {
                         <h3> Role: {project.role}</h3>
                         <p> {project.short} </p>    
                     </div>
-                    <p> Primary technologies </p>
-                    <ul>
-                        {project.main_tools.map(function(tool, i){
-                            return <li key={i}>{tool}</li>
-                        })}
-                    </ul>
+                    <div className="main-tools">
+                        <p> Primary technologies </p>
+                        <ul>
+                            {project.main_tools.map(function(tool, i){
+                                return <li key={i}>{tool}</li>
+                            })}
+                        </ul>
+                    </div>
                     <p className="expand"> Click for more details </p>
                 </div>
         }
