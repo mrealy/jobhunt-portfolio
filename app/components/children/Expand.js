@@ -4,7 +4,9 @@ class Expand extends React.Component {
     render() {
         var link = this.props.project.contributor_githubs;
         return (
-            <div id="modal-content">
+            <div className="row">
+            <div className="col-md-2" />
+            <div id="modal-content" className="col-md-8">
                 <h1> {this.props.project.title} </h1>
                 <h4> Project Links </h4>
                 <span>
@@ -24,6 +26,8 @@ class Expand extends React.Component {
                     })} 
                 </p>
                 
+            </div>
+            <div className="col-md-2" />
             </div>
         )
     }
