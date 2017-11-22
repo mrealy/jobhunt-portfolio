@@ -21,8 +21,9 @@ class ProjectModal extends React.Component {
     }
 
     closeOnBackground(e) {
-        if(e.target.id == 'modal') {
-            this.hideModal();
+        console.log(e.target, "clicked on e");
+        if(e.target.className == 'row') {
+            this.hideModal();   
         }
     }
 

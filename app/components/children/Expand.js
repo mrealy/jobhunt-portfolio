@@ -1,11 +1,14 @@
 import React from 'react';
+var screenshots = [];
+
 
 class Expand extends React.Component {
     render() {
         var link = this.props.project.contributor_githubs;
+        var id = this.props.project.id;
         return (
             <div className="row">
-            <div className="col-md-2" />
+            <div id="no-content" className="col-md-2" />
             <div id="modal-content" className="col-md-8">
                 <h1> {this.props.project.title} </h1>
                 <h4> Project Links </h4>
@@ -24,14 +27,39 @@ class Expand extends React.Component {
                         return <li key={t}>{task}</li>
                     })}
                 </ul>
+                <h4> Screenshots </h4>
+                <div className="row">
+                    {this.props.project.screenshots.map(function(pic, p) {
+                        return (
+                            <div key={p} className="col-md-4 project-img-border">
+                                <a href="#" data-dismiss="modal" data-toggle="modal" data-target={"#" + id + p}>
+                                    <img className="project-image" src={pic} />
+                                </a>
+                    
+                                <div className="modal fade" id={id + p} tabIndex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="true">
+                                    <div className="modal-dialog" role="document">
+                                        <div className="modal-content img-modal-content">
+                                            <div className="modal-body">
+                                                <img src={pic} />                                            
+                                            </div>
+                                            <div className="modal-footer">
+                                                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}     
+                </div>
                 <h4> Other Contributors </h4>
                 <p> {this.props.project.contributors.map(function(name, i){
-                        return <a href={link[i]} target="blank" key={i}> {name} </a>
-                    })} 
+                        return <a href={link[i]} target="blank" key={i}> {name} <br /></a>
+                    })}  
                 </p>
                 
             </div>
-            <div className="col-md-2" />
+            <div id="no-content" className="col-md-2" />
             </div>
         )
     }

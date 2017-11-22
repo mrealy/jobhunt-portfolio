@@ -58,6 +58,21 @@ p {
 .embed-responsive {
     padding-bottom:100%;
 }
+.project-image {
+    margin: 0 auto;
+    position: absolute;
+    max-height: 100%;
+    padding-top: 20px;
+    display: block;
+}
+.project-img-border {
+    border: 1px solid #007ab9;
+    position: relative;
+    min-height: 150px;
+    max-width: 210px;
+    margin: 0 10px 0 10px;
+    overflow: hidden;
+}
 footer {
     position: fixed;
     left: 0;
@@ -78,6 +93,7 @@ footer {
     left: 0;
     z-index: 7000;
     background: rgba(0,0,0,0.8);
+    overflow: scroll;
 }
   
 #modal-open-btn {
@@ -110,6 +126,13 @@ footer {
     padding: 30px;
     border: 1px solid lightslategray;
     background: white;
+}
+.modal-dialog {
+    position: relative;
+    display: table;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: auto;
 }
 @media (hover:none) {
     .expand {

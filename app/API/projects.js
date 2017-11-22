@@ -1,5 +1,6 @@
 var projects = [
     {
+        id: "tender",
         title: "tender",
         main_tools: ["HTML", "jQuery", "Spoonacular API"],
         role: "Front End",
@@ -14,6 +15,7 @@ var projects = [
         contributor_githubs: ["https://github.com/LauraMcG", "https://github.com/jlh974", "#"]
     },
     {
+        id: "who",
         title: "who ARE you?",
         main_tools: ["node/express", "handlebars", "Sequelize"],
         role: "Full Stack",
@@ -28,6 +30,7 @@ var projects = [
         contributor_githubs: ["https://github.com/jefisher1991", "https://github.com/FoxMessenger", "https://github.com/thensle", "https://github.com/FourEyeSamurai"]      
     },
     {
+        id: "shuttle",
         title: "ShuttleExtravaganza!",
         main_tools: ["node/express", "React", "Mongoose"],
         role: "Full Stack",
