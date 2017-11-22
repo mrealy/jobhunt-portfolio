@@ -19,7 +19,11 @@ class Expand extends React.Component {
                 <h4> Description </h4>
                 <p> {this.props.project.description} </p>
                 <h4> Contribution </h4>
-                <p> {this.props.project.contribution} </p>
+                <ul>
+                    {this.props.project.contribution.map(function(task, t){
+                        return <li key={t}>{task}</li>
+                    })}
+                </ul>
                 <h4> Other Contributors </h4>
                 <p> {this.props.project.contributors.map(function(name, i){
                         return <a href={link[i]} target="blank" key={i}> {name} </a>
