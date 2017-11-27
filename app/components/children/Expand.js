@@ -40,7 +40,7 @@ class Expand extends React.Component {
                                     <div className="modal-dialog" role="document">
                                         <div className="modal-content img-modal-content">
                                             <div className="modal-body">
-                                                <img src={pic} />                                            
+                                                <img className="modal-img" src={pic} />                                            
                                             </div>
                                             <div className="modal-footer">
                                                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
