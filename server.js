@@ -17,7 +17,9 @@ app.use(express.static("./public"));
 
 // react router route
 app.get("*", function(req, res) {
-    res.writeHead(200, {'Cache-Control': 'no-cache'});
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
+    res.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+    res.setHeader("Expires", "0"); // Proxies.
     res.sendFile(__dirname + "/public/index.html");
 });
 
