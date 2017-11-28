@@ -15,15 +15,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 //create static public folder
 app.use(express.static("./public"));
 
-function nocache(req, res, next) {
-    res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
-    res.header('Expires', '-1');
-    res.header('Pragma', 'no-cache');
-    next();
-  }
-
 // react router route
 app.get("*", nocache, function(req, res) {
+    res.writeHead(200, {'Cache-Control': 'no-cache'});
     res.sendFile(__dirname + "/public/index.html");
 });
 
