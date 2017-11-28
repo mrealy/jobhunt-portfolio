@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:server": "NODE_ENV=development nodemon ./server.js",
-    "prod": "NODE_ENV=production node ./server.js"
+    "prod": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
