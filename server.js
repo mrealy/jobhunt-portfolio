@@ -16,7 +16,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("./public"));
 
 // react router route
-app.get("*", nocache, function(req, res) {
+app.get("*", function(req, res) {
     res.writeHead(200, {'Cache-Control': 'no-cache'});
     res.sendFile(__dirname + "/public/index.html");
 });
