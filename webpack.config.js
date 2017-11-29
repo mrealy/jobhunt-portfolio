@@ -7,7 +7,7 @@ module.exports = {
 
   // The plain compiled Javascript will be output into this file
   output: {
-    filename: 'public/bundle.js'  
+    filename: "public/bundle.js" 
   },
 
   // This section desribes the transformations we will perform
@@ -22,7 +22,7 @@ module.exports = {
         loader: "babel-loader",
         query: {
           // These are the specific transformations we'll be using.
-          presets: ["react", "es2015", 'stage-2']
+          presets: ["react", "es2015", "stage-2"]
         }
       }
     ]
