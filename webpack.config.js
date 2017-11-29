@@ -7,7 +7,9 @@ module.exports = {
 
   // The plain compiled Javascript will be output into this file
   output: {
-    filename: "public/bundle.js" 
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
   },
 
   // This section desribes the transformations we will perform
