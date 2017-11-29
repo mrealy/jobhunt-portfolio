@@ -10,9 +10,9 @@ nav {
     width: 100%;
 }
 .navbar {
-    background-color: #12296d6e;
-    border-color: #0d1d478a;
-    border-width: 2px 1px 2px 1px;
+    background-color: rgba(123,123,255, 0.4);
+    border-color: rgb(99,108,155);
+    border-width: 2px 1px 2px 1px
 }
 .navbar-brand {
     font-weight: bold;
@@ -47,8 +47,8 @@ p {
     z-index: 0;
     border-style: solid;
     border-width: 1px;
-    border-color: #0d1d478a;
-    box-shadow: 3px 3px 10px #12296d6e;
+    border-color: rgb(99,108,155);
+    box-shadow: 3px 3px 10px rgba(123,123,255, 0.4);
     cursor: pointer;
 }
 
@@ -110,16 +110,16 @@ p {
     width: 300px
 }
 
+/* Footer */
 footer {
-    /* position: absolute;
-    left: 0;
-    bottom: 0; */
     margin-top: 5px;
-    background-color: #12296d6e;
+    background-color: rgba(123,123,255, 0.5);
     border: solid;
-    border-color: #0d1d478a;
+    border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px;
     text-align: center;
+    font-weight: bold;
+    color: rgb(26, 25, 36) !important;
     width: 100%;
     clear: both;
 }
@@ -167,9 +167,8 @@ footer {
     border: 1px solid lightslategray;
     background: white;
 }
-/* .modal {
 
-} */
+/* screen shot modals */
 .modal-dialog {
     position: relative;
     height: 100%;
@@ -198,6 +197,8 @@ footer {
     display: block;
     margin: auto;
 }
+
+/* Query for completed transitions for media devices without mouses */
 @media (hover:none) {
     .expand {
         max-height: 200px;
