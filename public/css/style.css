@@ -10,7 +10,7 @@ nav {
     width: 100%;
 }
 .navbar {
-    background-color: rgba(100, 149, 237, .75);
+    background-color: hsl(219, 70%, 65%);
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px
 }
@@ -48,7 +48,7 @@ p {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(99,108,155);
-    box-shadow: 3px 3px 10px rgba(100, 149, 237, .75);
+    box-shadow: 3px 3px 10px hsl(219, 70%, 65%);
     cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ p {
 /* Footer */
 footer {
     margin-top: 5px;
-    background-color: rgba(100, 149, 237, .75);
+    background-color: hsl(219, 70%, 65%);
     border: solid;
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px;
