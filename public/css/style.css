@@ -10,7 +10,7 @@ nav {
     width: 100%;
 }
 .navbar {
-    background-color: rgba(123,123,255, 0.4);
+    background-color: rgba(65, 105, 255, 0.4);
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px
 }
@@ -48,7 +48,7 @@ p {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(99,108,155);
-    box-shadow: 3px 3px 10px rgba(123,123,255, 0.4);
+    box-shadow: 3px 3px 10px rgba(65, 105, 255, 0.4);
     cursor: pointer;
 }
 
