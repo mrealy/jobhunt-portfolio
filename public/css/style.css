@@ -10,7 +10,7 @@ nav {
     width: 100%;
 }
 .navbar {
-    background-color: #2874A6;
+    background-color: slategray;
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px
 }
@@ -48,7 +48,7 @@ p {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(99,108,155);
-    box-shadow: 3px 3px 10px #2874A6;
+    box-shadow: 3px 3px 10px slategray;
     cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ p {
 /* Footer */
 footer {
     margin-top: 5px;
-    background-color: #2874A6;
+    background-color: slategray;
     border: solid;
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px;
