@@ -6,13 +6,32 @@ body {
     overflow-x: hidden;
     color: rgb(26, 25, 36) !important;
 }
+h2 {
+    border-style: solid;
+    border-width: 0px;
+    padding-bottom: 5px;
+    border-bottom-width: 2px;
+    border-color: rgb(99,108,155);
+}
+h3 {
+    margin: 0;
+}
+p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.container {
+    width: auto;
+}
+
+/* Navbar/header  */
 nav {
     width: 100%;
 }
 .navbar {
     background-color: hsl(219, 70%, 65%);
     border-color: rgb(99,108,155);
-    border-width: 2px 1px 2px 1px
+    border-width: 2px 1px 2px 1px;
 }
 .navbar-brand {
     font-weight: bold;
@@ -32,13 +51,9 @@ nav {
     color: gainsboro !important;
     text-decoration: underline; 
 }
-h3 {
-    margin: 0;
-}
-p {
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
+
+
+/* Projects page */
 .project-tile {
     height: 300px;
     margin: 10px;
@@ -76,15 +91,19 @@ p {
 .project-tile:hover .expand {
     max-height: 200px;
     opacity: 1;
-    padding: 5px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
 }
 .project-tile:hover .main-tools {
     font-size: 14px;
     padding-top: 0px;
 }
+
+/* Resume.js component */
 .embed-responsive {
     height: 84vh;
 }
+
+/* Expand.js component */
 .project-image {
     margin: 0 auto;
     position: absolute;
@@ -101,13 +120,30 @@ p {
     overflow: hidden;
 }
 
-/* About pane */
+/* About.js component */
+.about-tile {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(99,108,155);
+    display: inline-block;
+    padding: 15px;
+    object-fit: contain;
+    box-shadow: 3px 3px 10px hsl(219, 70%, 65%);
+}
 .img-margin {
     margin-right: 40px;
     height: 140px;
 }
-#about-text {
-    width: 300px
+.cellist-scale {
+    width: auto;
+    max-width: 400px;
+    height: auto;
+}
+.about-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    width: auto;
 }
 
 /* Footer */
@@ -203,7 +239,7 @@ footer {
     .expand {
         max-height: 200px;
         opacity: 1;
-        padding: 10px 0px 10px 0px;
+        padding: 5px 0px 5px 0px;
     }
     .main-tools {
         font-size: 14px;
