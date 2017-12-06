@@ -266,7 +266,7 @@ footer {
 }
 
 /* Query for completed transitions for media devices without mouses */
-@media (hover:none) {
+@media (hover:none), (hover:on-demand) {
     .expand {
         max-height: 200px;
         opacity: 1;
