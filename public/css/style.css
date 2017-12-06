@@ -15,9 +15,6 @@
     position: absolute;
     z-index: -1;   
 }
-.background {
-    height: auto;
-}
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
