@@ -4,7 +4,7 @@ import Projects from './children/Projects';
 import Routes from '../routes/routes';
 
 const App = () => (
-    <div>
+    <div id="wallpaper">
         <nav className="navbar navbar-default">
             <div className="container-fluid">
 

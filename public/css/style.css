@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 #app {
     min-height: calc(100vh - 27px);
+    
+}
+#app::after {
+    background-image: url("../img/wallpaper.png");
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+.background {
+    height: auto;
 }
 body {
+    font-family: 'Roboto', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
     color: rgb(26, 25, 36) !important;
@@ -29,7 +47,7 @@ nav {
     width: 100%;
 }
 .navbar {
-    background-color: hsl(219, 70%, 65%);
+    background-color: hsl(201, 24%, 54%);
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px;
 }
@@ -54,19 +72,23 @@ nav {
 
 
 /* Projects page */
+.fluid {
+    padding: 0px;
+    margin: 0px;
+}
 .project-tile {
     height: 300px;
     margin: 10px;
     padding: 10px 20px 10px 20px;
     font-weight: bolder;
     z-index: 0;
+    background-color: white;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(99,108,155);
-    box-shadow: 3px 3px 10px hsl(219, 70%, 65%);
+    box-shadow: 3px 3px 10px hsl(201, 24%, 54%);
     cursor: pointer;
 }
-
 .expand {
     -webkit-transition: all .75s; 
     -moz-transition: all .75s; 
@@ -102,6 +124,10 @@ nav {
 .embed-responsive {
     height: 84vh;
 }
+#pdf {
+    margin: 0 auto;
+    height: calc(84vh);
+}
 
 /* Expand.js component */
 .project-image {
@@ -122,34 +148,37 @@ nav {
 
 /* About.js component */
 .about-tile {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(99,108,155);
+    width: 100%;
+    max-width: 600px;
     display: inline-block;
     padding: 15px;
-    object-fit: contain;
-    box-shadow: 3px 3px 10px hsl(219, 70%, 65%);
+    
 }
 .img-margin {
     margin-right: 40px;
     height: 140px;
 }
 .cellist-scale {
-    width: auto;
-    max-width: 400px;
     height: auto;
+    max-width: 100%;
+    border-style: solid;
+    border-width: 0px;
+    padding-bottom: 10px;
+    border-bottom-width: 2px;
+    border-color: rgb(99,108,155);
 }
 .about-text {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    max-width: 400px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: auto;
 }
 
 /* Footer */
 footer {
-    margin-top: 5px;
-    background-color: hsl(219, 70%, 65%);
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(201, 24%, 54%);
     border: solid;
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px;

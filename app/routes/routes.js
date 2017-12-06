@@ -5,7 +5,7 @@ import About from '../components/children/About';
 import Resume from '../components/children/Resume';
 
 const Routes = () => (
-    <div>
+    <div className="background">
       <Switch>
         <Route exact path="/" component={Projects}/>
         <Route path="/projects" component={Projects}/>

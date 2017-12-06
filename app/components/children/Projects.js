@@ -16,7 +16,7 @@ class Projects extends React.Component {
     renderProject() {
         return this.state.projects.map(function(project, index) {
             return (
-                <div key={index} className="col-md-4">
+                <div key={index} className="col-md-4 fluid">
                     <ProjectModal project={project} openbtn={true} content={<Expand project={project}/>} />                    
                 </div>
             )
@@ -25,7 +25,7 @@ class Projects extends React.Component {
     render() {
         return (
             <div className="main-container">
-                <div className="row"> 
+                <div className="row fluid"> 
                     {this.renderProject()}
                 </div>
                 {this.props.children}
