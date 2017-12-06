@@ -66,7 +66,12 @@ nav {
     color: gainsboro !important;
     text-decoration: underline; 
 }
-
+.navbar-default .navbar-toggle {
+    border-color: rgb(26, 25, 36) !important;    
+}
+.icon-bar {
+    background-color: rgb(26, 25, 36) !important;
+}
 
 /* Projects page */
 .fluid {
