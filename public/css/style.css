@@ -20,6 +20,7 @@ html {
     z-index: -1;   
 }
 body {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
@@ -183,6 +184,8 @@ nav {
 
 /* Footer */
 footer {
+    position: absolute;
+    bottom: 0px;
     font-family: 'Roboto', sans-serif;
     background-color: hsl(201, 24%, 54%);
     border: solid;
