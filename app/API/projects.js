@@ -43,6 +43,21 @@ var projects = [
         screenshots: ["/img/Extravaganza-1.PNG", "/img/Extravaganza-2.PNG", "/img/Extravaganza-3.PNG"],
         contributors: ["Caryn Carter", "Jared Moscrip", "Linh Nguyen"],
         contributor_githubs: ["https://github.com/Caryndcarter", "https://github.com/1jared123", "https://github.com/linhng15"]
+    },
+    {
+        id: "NYT",
+        title: "NYT Article Search",
+        main_tools: ["React", "Mongo DB", "Node/express"],
+        role: "Full Stack",
+        short: "MERN app for searching and saving articles through the New York Times API.",
+        github: "https://github.com/mrealy/NYT-react",
+        heroku: "https://obscure-ocean-86063.herokuapp.com",
+        tools: "React, React Router, Node, Mongoose, Express, NYT API, Bootstrap, webpack, axios",        
+        description: "Search for New York Times articles by making axios get requests to the NYT api.  Using a react/bootstrap front end, lists articles you can then view or save to the database using mongoose.",
+        contribution: ["Sole Contributor"],        
+        screenshots: ["/img/NYTreact-1.PNG", "/img/NYTreact-2.PNG", "/img/NYTreact-3.PNG"],
+        contributors: ["Sole Contributor"],
+        contributor_githubs: []
     }
 ]
 
