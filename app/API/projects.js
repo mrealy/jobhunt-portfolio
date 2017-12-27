@@ -57,7 +57,7 @@ var projects = [
         contribution: ["Sole Contributor"],        
         screenshots: ["/img/NYTreact-1.PNG", "/img/NYTreact-2.PNG", "/img/NYTreact-3.PNG"],
         contributors: ["Sole Contributor"],
-        contributor_githubs: []
+        contributor_githubs: ["https://github.com/mrealy"]
     }
 ]
 
