@@ -5,7 +5,7 @@ html {
 }
 
 #app {
-    min-height: calc(100vh - 27px);
+    min-height: calc(100vh - 24px);
     
 }
 #app::after {
@@ -184,8 +184,6 @@ nav {
 
 /* Footer */
 footer {
-    position: absolute;
-    bottom: 0px;
     font-family: 'Roboto', sans-serif;
     background-color: hsl(201, 24%, 54%);
     border: solid;
