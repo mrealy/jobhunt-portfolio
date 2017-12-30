@@ -8,8 +8,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js --progress --colors",
     "start:server": "NODE_ENV=development nodemon ./server.js",
-    "prod": "NODE_ENV=production node server.js"
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,7 @@
     "morgan": "^1.9.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "react-router": "^4.2.0"
-  },
-  "devDependencies": {
+    "react-router": "^4.2.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
@@ -38,5 +38,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "nodemon": "^1.12.0",
     "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    
   }
 }
