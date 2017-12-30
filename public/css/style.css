@@ -6,7 +6,6 @@ html {
 
 #app {
     min-height: calc(100vh - 24px);
-    
 }
 #app::after {
     background-image: url("../img/wallpaper.png");
@@ -16,8 +15,9 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
-    position: absolute;
-    z-index: -1;   
+    position: fixed;
+    z-index: -1;
+    background-repeat: repeat;
 }
 body {
     height: 100%;
