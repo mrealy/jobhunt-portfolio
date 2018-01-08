@@ -53,10 +53,10 @@ class Expand extends React.Component {
                     })}     
                 </div>
                 <h4> Other Contributors </h4>
-                <p> {this.props.project.contributors.map(function(name, i){
-                        return <a href={link[i]} target="blank" key={i}> {name} <br /></a>
+                <ul> {this.props.project.contributors.map(function(name, i){
+                        return <li key={i}> {name} <br /></li>
                     })}  
-                </p>
+                </ul>
                 
             </div>
             <div id="no-content" className="col-md-2" />
