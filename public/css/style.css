@@ -52,6 +52,7 @@ nav {
     background-color: hsl(201, 24%, 54%);
     border-color: rgb(99,108,155);
     border-width: 2px 1px 2px 1px;
+    margin-bottom: 15px;
 }
 .navbar-brand {
     font-weight: bold;
@@ -128,7 +129,15 @@ nav {
 }
 
 /* Resume.js component */
+#download-resume {
+    color: rgb(26, 25, 36);
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid rgb(99,108,155);
+    border-radius: 7px;
+}
 .embed-responsive {
+    margin-top: 15px;
     height: 84vh;
 }
 #pdf {
