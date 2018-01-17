@@ -24,6 +24,11 @@ class ProjectModal extends React.Component {
         console.log(e.target, "clicked on e");
         if(e.target.className == 'row') {
             this.hideModal();   
+            console.log("row true");
+        } else
+        if(e.target.id == 'project-modal-close') {
+            this.hideModal();
+            console.log("project-modal-close true");
         }
     }
 
@@ -52,7 +57,7 @@ class ProjectModal extends React.Component {
             <span>
             {projectTile}
             <div id="modal" style={this.state} onClick={(e) => this.closeOnBackground(e)}>
-                <span className="modal-close" onClick={(e) => this.hideModal(e)}>X</span>
+                {/*<span className="modal-close" onClick={(e) => this.hideModal(e)}>X</span>*/}
                 {this.props.content}
             </div>
             </span>

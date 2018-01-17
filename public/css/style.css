@@ -212,7 +212,7 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 7000;
+    z-index: 1045;
     background: rgba(0,0,0,0.8);
     overflow: scroll;
 }
@@ -227,16 +227,20 @@ footer {
   
 .modal-close {
     cursor: pointer;
-    color: white;
-    padding: 20px;
-    z-index: 9100;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    z-index: 1045;
     position: absolute;
     top: 0;
     right: 0;
+    border: solid 2px black;
+    border-radius: 25px;
 }
   
 .modal-close:hover {
     color: red;
+    border-color: red;
 }
 
 #modal-content {
@@ -252,8 +256,8 @@ footer {
 /* screen shot modals */
 .modal-dialog {
     position: relative;
-    height: 100%;
     width: 100%;
+    margin: 30px;
     /* max-height: calc(100vh - 40px);
     max-width: calc(100vh - 40px); */
 }
@@ -265,7 +269,8 @@ footer {
     height: auto;
     width: auto;
     max-height: calc(100vh - 40px);
-    max-width: calc(100% - 40px);
+    max-width: 95%;
+    margin: 0px;
 }
 .modal-body {
     padding: 5px;
@@ -278,6 +283,9 @@ footer {
     display: block;
     margin: auto;
 }
+/* .modal-backdrop {
+    z-index: 999;
+} */
 
 /* Query for completed transitions for media devices without mouses */
 @media (hover:none), (hover:on-demand) {

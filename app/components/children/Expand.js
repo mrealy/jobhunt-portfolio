@@ -10,6 +10,7 @@ class Expand extends React.Component {
             <div className="row">
             <div id="no-content" className="col-md-2" />
             <div id="modal-content" className="col-md-8">
+                <span id="project-modal-close" className="modal-close glyphicon glyphicon-remove"></span>
                 <h1> {this.props.project.title} </h1>
                 <h4> Project Links </h4>
                 <span>
@@ -31,8 +32,8 @@ class Expand extends React.Component {
                 <div className="row">
                     {this.props.project.screenshots.map(function(pic, p) {
                         return (
-                            <div className="col-md-4">
-                                <div key={p} className="project-img-border">
+                            <div key={p} className="col-md-4">
+                                <div className="project-img-border">
                                     <a href="#" data-dismiss="modal" data-toggle="modal" data-target={"#" + id + p}>
                                         <img className="project-image" src={pic} />
                                     </a>
@@ -40,11 +41,9 @@ class Expand extends React.Component {
                                     <div className="modal fade" id={id + p} tabIndex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="true">
                                         <div className="modal-dialog" role="document">
                                             <div className="modal-content img-modal-content">
+                                                <span className="modal-close glyphicon glyphicon-remove" data-dismiss="modal"></span>                                            
                                                 <div className="modal-body">
                                                     <img className="modal-img" src={pic} />                                            
-                                                </div>
-                                                <div className="modal-footer">
-                                                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
