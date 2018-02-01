@@ -55,7 +55,7 @@ var projects = [
         tools: "React, React Router, Node, Mongoose, Express, NYT API, Bootstrap, webpack, axios",        
         description: "Search for New York Times articles by making axios get requests to the NYT api.  Using a react/bootstrap front end, lists articles you can then view or save to the database using mongoose.",
         contribution: ["Sole Contributor"],        
-        screenshots: ["/img/NYTreact-1.PNG", "/img/NYTreact-2.PNG", "/img/NYTreact-3.PNG"],
+        screenshots: ["/img/NYTreact-1.png", "/img/NYTreact-2.png", "/img/NYTreact-3.png"],
         contributors: ["Sole Contributor"],
         contributor_githubs: ["https://github.com/mrealy"]
     }
