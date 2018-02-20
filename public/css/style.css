@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 :root {
-    --color-1: hsl(201, 24%, 54%);
+    --color-1: #282626;
+    --color-2: hsl(201, 24%, 54%);
     --boarders: rgb(99,108,155);
+    --text-color: rgb(26, 25, 36);
+    --font-header: 'Josefin Sans', sans-serif;
+    --font-body: 'Lato', sans-serif;
 }
 html {
     height: 100%;
@@ -24,10 +28,10 @@ html {
 }
 body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-body);
     max-width: 100%;
     overflow-x: hidden;
-    color: rgb(26, 25, 36) !important;
+    color: var(--text-color);
 }
 h2 {
     border-style: solid;
@@ -35,8 +39,11 @@ h2 {
     padding-bottom: 5px;
     border-bottom-width: 2px;
     border-color: var(--boarders);
+    font-family: var(--font-header);
+    font-size: 28px;
 }
 h3 {
+    font-family: var(--font-body);
     margin: 0;
 }
 p {
@@ -52,46 +59,88 @@ nav {
     width: 100%;
 }
 .navbar {
-    background-color: var(--color-1);
+    background: var(--color-1);
     border-color: var(--boarders);
     border-width: 2px 0px 2px 0px;
     border-radius: 0px;
     margin-bottom: 15px;
+    box-shadow: 0 4px 4px -2px gray;
 }
 .navbar-brand {
+    /* font-family: var(--font-header); */
+    font-family: 'Caudex', serif;
     font-weight: bold;
-    color: rgb(26, 25, 36) !important;
+    font-size: 30px;
+    color: var(--boarders) !important;
+    transition: all .5s;
 }
 .navbar-brand:hover {
     color: gainsboro !important;
 }
 .navbar-nav {
     float: right;
+    font-family: var(--font-header);
 }
 @media (max-width: 767px) {
     .navbar-nav {
         float: left;
+        width: 50%;
     }
 }
-.navbar-nav li a {
-    font-weight: bold;
-    color: rgb(26, 25, 36) !important;
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .7s;
 }
-.navbar-nav li a:hover {
-    color: gainsboro !important; 
+nav ul li a {
+    position: relative;
+    font-weight: bold !important;
+    color: var(--boarders) !important;
+    z-index: 1;   
 }
-.navbar-nav li a:focus {
+nav ul li a:hover {
     color: gainsboro !important;
-    text-decoration: underline; 
+    /* background-color: var(--boarders) !important; */
 }
-.navbar-default .navbar-toggle {
-    border-color: rgb(26, 25, 36) !important;    
+nav ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: var(--boarders) !important;
+    border-left: 1px gainsboro solid;
+    border-right: 1px gainsboro solid;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  .navbar-nav li a:focus {
+    color: gainsboro !important;
+    background-color: var(--boarders) !important;
+    border-left: 1px gainsboro solid;
+    border-right: 1px gainsboro solid;
 }
+/* .navbar-default .navbar-toggle {
+    border-color: var(--text-color);    
+} */
 .icon-bar {
-    background-color: rgb(26, 25, 36) !important;
+    background-color: var(--text-color);
 }
 .btn-social-icon {
     margin: 8px 2px 8px 2px;
+    transition: all .5s;
 }
 .btn-social-icon>:first-child {
     top: 4px;
@@ -110,14 +159,14 @@ nav {
     height: 300px;
     margin: 10px;
     padding: 10px 20px 10px 20px;
-    font-weight: bolder;
+    font-weight: thin;
     z-index: 0;
     background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--boarders);
-    box-shadow: 3px 3px 10px var(--color-1);
+    box-shadow: 3px 3px 10px var(--color-2);
     cursor: pointer;
+}
+.project-title {
+    font-style: thin;
 }
 .expand {
     -webkit-transition: all .75s; 
@@ -215,14 +264,14 @@ nav {
 
 /* Footer */
 footer {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-header);
     background-color: var(--color-1);
     border: solid;
     border-color: var(--boarders);
     border-width: 2px 1px 2px 1px;
     text-align: center;
     font-weight: bold;
-    color: rgb(26, 25, 36) !important;
+    color: var(--text-color);
     width: 100%;
     clear: both;
 }

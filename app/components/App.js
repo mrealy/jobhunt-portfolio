@@ -15,7 +15,7 @@ const App = () => (
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="/">Michael Realy</a>                    
+                    <a className="navbar-brand" href="/"><span className="first-brand">Michael J.</span> <span className="last-brand">Realy</span></a>                    
                 </div>
         
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,9 +28,9 @@ const App = () => (
                         </a>
                     </div>
                     <ul className="nav navbar-nav">
-                        <li><Link to="/projects"> Projects </Link></li>
-                        <li><Link to="/about"> About </Link></li>
-                        <li><Link to="/resume"> Resume </Link></li>
+                        <li><Link to="/projects"><span className="far fa-clipboard"></span> PROJECTS </Link></li>
+                        <li className="nav-extend"><Link to="/about"><span className="far fa-user"></span> ABOUT </Link></li>
+                        <li className="nav-extend"><Link to="/resume"><span className="far fa-file-alt"></span> RESUME </Link></li>
                     </ul>
                 </div>                
             </div>

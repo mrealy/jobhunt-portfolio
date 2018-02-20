@@ -37,7 +37,7 @@ class ProjectModal extends React.Component {
         if (this.props.openbtn) { 
             var projectTile = 
                 <div className="project-tile" onClick={(e) => this.showModal(e)} >
-                    <h2>{project.title}</h2>
+                    <h2 className="project-title">{project.title}</h2>
                     <div className="expand">
                         <h3> Role: {project.role}</h3>
                         <p> {project.short} </p>    
