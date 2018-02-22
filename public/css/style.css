@@ -57,22 +57,85 @@ p {
 /* Navbar/header  */
 nav {
     width: 100%;
+    height: 90px;
+    padding-top: 19px;
 }
 .navbar {
     background: var(--color-1);
     border-color: var(--boarders);
-    border-width: 2px 0px 2px 0px;
+    border-bottom-width: 3px;
     border-radius: 0px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 4px -2px gray;
+    /* box-shadow: 0 4px 4px -2px gray; */
+}
+.container-fluid {
+    position: relative;
+    top: -20px;
 }
 .navbar-brand {
     /* font-family: var(--font-header); */
-    font-family: 'Caudex', serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: var(--boarders) !important;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    top: -19px;
+    left: 0px;
+    height: 85px;
+    padding: 0;
+    /* width: 40vw; */
     transition: all .5s;
+}
+.first-brand {
+    display: block;
+    font-weight: 600;
+    font-size: 63px;
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    color: #8692c8;
+    text-align: center;
+    text-shadow: -2px 0px 3px #131857;
+    border-top: 4px solid #33467a;
+    border-bottom: 4px solid #33467a;
+    height: 66px;
+}
+
+.last-brand {
+    display: block;
+    font-family: 'Cinzel', serif;
+    position: absolute;
+    top: -2px;
+    left: 223px;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: #33467a;
+    text-shadow: 1px 0px 1px #131857;   
+}
+@media (max-width: 991px) {
+    .first-brand {
+        font-size: 40px;
+        height: 46px;
+        top: 20px;
+    }
+    .last-brand {
+        font-size: 63px;
+        top: 12px;
+        left: 149px;
+    }
+}
+@media (max-width: 430px) {
+    .first-brand {
+        font-size: 30px;
+        height: 38px;
+        top: 24px;
+        left: 6px;
+    }
+    .last-brand {
+        font-size: 52px;
+        top: 17px;
+        left: 108px;
+    }
 }
 .navbar-brand:hover {
     color: gainsboro !important;
@@ -81,6 +144,14 @@ nav {
     float: right;
     font-family: var(--font-header);
 }
+.navbar-collapse {
+    background: var(--color-1);
+    /* z-index: 4; */
+}
+.navbar-collapse.collapse.in nav {
+    margin-bottom: 130px;
+}
+
 @media (max-width: 767px) {
     .navbar-nav {
         float: left;
@@ -88,21 +159,23 @@ nav {
     }
 }
 nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .7s;
+nav ul li a::after,
+nav ul li a::before {
+    position: absolute;
+    top: 20px;
+    transition: all .7s;
 }
 nav ul li a {
     position: relative;
     font-weight: bold !important;
-    color: var(--boarders) !important;
+    color: gainsboro !important;
     z-index: 1;   
 }
 nav ul li a:hover {
-    color: gainsboro !important;
+    color: white !important;
     /* background-color: var(--boarders) !important; */
 }
-nav ul li a:after {
+nav ul li a::after {
     display: block;
     position: absolute;
     top: 0;
@@ -114,32 +187,37 @@ nav ul li a:after {
     height: 1px;
     content: '.';
     color: transparent;
-    background: var(--boarders) !important;
-    border-left: 1px gainsboro solid;
-    border-right: 1px gainsboro solid;
+    background: rgba(169, 169, 169, .3);
+    border-top: 1px gainsboro solid;
+    border-bottom: 1px gainsboro solid;
     visibility: none;
     opacity: 0;
     z-index: -1;
   }
-  nav ul li a:hover:after {
+  nav ul li a:hover::after {
     opacity: 1;
     visibility: visible;
     height: 100%;
   }
   .navbar-nav li a:focus {
-    color: gainsboro !important;
-    background-color: var(--boarders) !important;
-    border-left: 1px gainsboro solid;
-    border-right: 1px gainsboro solid;
+    color: white !important;
+    background-color: rgba(169, 169, 169, .3) !important;
+    border: 1px gainsboro solid;
+    border-radius: 3px;
 }
 /* .navbar-default .navbar-toggle {
     border-color: var(--text-color);    
 } */
+.navbar-toggle {
+    margin-top: 28px;
+}
 .icon-bar {
     background-color: var(--text-color);
 }
 .btn-social-icon {
-    margin: 8px 2px 8px 2px;
+        /* position: absolute; */
+    /* top: 20px; */
+    margin: 24px 2px 8px 2px;
     transition: all .5s;
 }
 .btn-social-icon>:first-child {
@@ -149,7 +227,12 @@ nav ul li a:after {
     display: block;
     float: right;
 }
-
+.btn-github {
+    background-color: rgba(169, 169, 169, .3);
+}
+.btn-linkedin:hover, .btn-github:hover {
+    background-color: var(--color-1);
+}
 /* Projects page */
 .fluid {
     padding: 0px;
