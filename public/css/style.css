@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 :root {
-    --color-1: hsl(201, 24%, 54%);
+    --color-1: #282626;
+    --color-2: hsl(201, 24%, 54%);
     --boarders: rgb(99,108,155);
+    --text-color: rgb(26, 25, 36);
+    --font-header: 'Josefin Sans', sans-serif;
+    --font-body: 'Lato', sans-serif;
 }
 html {
     height: 100%;
@@ -50,21 +54,47 @@ p {
 /* Navbar/header  */
 nav {
     width: 100%;
+    /* height: 90px; */
+    padding: 20px 0px 20px 0px;
 }
 .navbar {
     background-color: var(--color-1);
     border-color: var(--boarders);
-    border-width: 2px 0px 2px 0px;
+    border-bottom-width: 3px;
     border-radius: 0px;
     margin-bottom: 15px;
 }
-.navbar-brand {
-    font-weight: bold;
-    color: rgb(26, 25, 36) !important;
-}
+/* .navbar-brand {
+    transition: all .5s;
+} */
 .navbar-brand:hover {
     color: gainsboro !important;
 }
+/* .first-brand {
+    font-weight: 600;
+    font-size: 63px;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
+    color: #8692c8;
+    text-align: center;
+    text-shadow: -2px 0px 3px #131857;
+    border-top: 4px solid #33467a;
+    border-bottom: 4px solid #33467a;
+    height: 66px;
+} */
+/* .last-brand {
+    display: block;
+    font-family: 'Cinzel', serif;
+    position: absolute;
+    top: -2px;
+    left: 223px;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: #33467a;
+    text-shadow: 1px 0px 1px #131857;   
+} */
 .navbar-nav {
     float: right;
 }
