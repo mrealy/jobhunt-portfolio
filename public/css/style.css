@@ -67,65 +67,26 @@ nav {
     margin-bottom: 15px;
 }
 .navbar-brand {
-    font-family: 'Catamaran', sans-serif;
-    letter-spacing: 2px;
-    position: relative;
-    top: -19px;
-    left: 0px;
     height: 85px;
     padding: 0;
     transition: all .5s;
 }
-.first-brand {
-    display: block;
-    font-weight: 600;
-    font-size: 63px;
+.brand-name {
     position: absolute;
-    top: 11px;
+    top: 10px;
     left: 15px;
-    color: #8692c8;
-    text-align: center;
-    text-shadow: -2px 0px 5px #131857;
-    border-top: 4px solid #33467a;
-    border-bottom: 4px solid #33467a;
-    height: 66px;
-}
-.last-brand {
-    display: block;
-    font-family: 'Cinzel', serif;
-    position: absolute;
-    top: -2px;
-    left: 221px;
-    font-size: 90px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 900;
-    color: #33467a;
-    text-shadow: 1px 0px 1px #131857;   
 }
 @media (max-width: 991px) {
-    .first-brand {
-        font-size: 37px;
-        height: 43px;
-        top: 23px;
-    }
-    .last-brand {
-        font-size: 59px;
-        top: 15px;
-        left: 141px;
+    .brand-name {
+        width: 330px;
+        top: 22px;
     }
 }
 @media (max-width: 430px) {
-    .first-brand {
-        font-size: 30px;
-        height: 38px;
-        top: 24px;
-        left: 6px;
-    }
-    .last-brand {
-        font-size: 52px;
-        top: 17px;
-        left: 108px;
+    .brand-name {
+        width: 225px;
+        top: 29px;
+        left: 10px
     }
 }
 .navbar-brand:hover {
