@@ -142,7 +142,7 @@ nav {
     height: 136px;
 }
 .btn-social-icon {
-    margin: 28px 2px 8px 2px;
+    margin: 27px 2px 8px 2px;
     transition: all .5s;
 }
 .btn-social-icon>:first-child {
@@ -154,12 +154,18 @@ nav {
     position: relative;
     left: 15px;
 }
-.btn-github {
-    background-color: rgba(169, 169, 169, .3);
-}
-.btn-linkedin:hover, .btn-github:hover {
+.btn-linkedin, .btn-github {
+    color: gainsboro;
     background-color: var(--color-1);
     border-color: var(--color-1);
+}
+.btn-linkedin:hover {
+    color: white;
+    background-color: #007bb6;
+}
+.btn-github:hover {
+    color: white;
+    background-color: #4f4e4e;
 }
 
 @media (max-width: 767px) {
