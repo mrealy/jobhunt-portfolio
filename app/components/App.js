@@ -16,12 +16,7 @@ const App = () => (
                         <span className="icon-bar"></span>
                     </button>
                     <a className="navbar-brand" href="/">
-                        <div>
-                            <h1 className="first-brand">Michael</h1>
-                        </div> 
-                        <div>
-                            <h1 className="last-brand">Realy</h1>
-                        </div>
+                        <img className="brand-name" src="/img/Brand.png" alt="Brand" />
                     </a>                    
                 </div>
         
