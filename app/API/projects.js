@@ -42,7 +42,7 @@ var projects = [
         description: "App for finding and saving upcoming events that helps users find other app users near them that are also interested in the same events.  Find a ride or a friend!",
         contribution: ["Project conception", "Project lead", "React Components", "Mongoose modeling", "Monoose GET/POST requests"],
         screenshots: ["/img/Extravaganza-1.PNG", "/img/Extravaganza-2.PNG", "/img/Extravaganza-3.PNG"],
-        contributors: ["Caryn Carter", "Jared Moscrip", "Linh Nguyen"
+        contributors: ["Caryn Carter", "Jared Moscrip", "Linh Nguyen"]
     },
     {
         id: "NYT",
