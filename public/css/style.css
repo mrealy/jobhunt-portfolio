@@ -420,7 +420,9 @@ footer {
     padding: 5px;
 }
 .modal-content {
-    border: solid 5px;
+    border: solid 2px;
+    border-color: var(--boarders);
+    border-radius: 0px;
     height: auto;
     width: auto;
     max-height: calc(100vh - 40px);
